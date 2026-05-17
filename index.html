@@ -1,3 +1,6 @@
+# CV Rafael Figueredo — HTML completo
+
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -86,4 +89,228 @@
     .contact-box {
       background: #1e1e22;
       color: white;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #d8ca45;
+      color: #1e1e22;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .right {
+      padding: 40px 40px 50px;
+      background: #f6f6f6;
+    }
+
+    .top-bar {
+      width: 100%;
+      height: 35px;
+      background: #d6c84a;
+      margin-bottom: 40px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section-title {
+      background: #b8d0df;
+      padding: 18px 28px;
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 28px;
+      display: inline-block;
+      min-width: 100%;
+    }
+
+    .section-title.dark {
+      background: #1e1e22;
+      color: white;
+    }
+
+    .section-title span {
+      margin-right: 12px;
+    }
+
+    .about {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #222;
+    }
+
+    .job-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .job-date {
+      font-size: 18px;
+      margin-bottom: 22px;
+    }
+
+    ul {
+      padding-left: 30px;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .education h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .education p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: 900px) {
+      .cv {
+        grid-template-columns: 1fr;
+      }
+
+      .photo {
+        width: 250px;
+        height: 250px;
+      }
+
+      .name h1 {
+        font-size: 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv">
+
+    <div class="left">
+
+      <div class="photo">
+        <!-- Reemplaza foto.jpg por tu imagen -->
+        <img src="foto.jpg" alt="Rafael Figueredo">
+      </div>
+
+      <div class="name">
+        <h1>RAFAEL<br>FIGUEREDO</h1>
+        <p>ESTUDIANTE.</p>
+      </div>
+
+      <div class="contact">
+
+        <div class="contact-box">
+          <div class="icon">☎</div>
+          <div>+34 601 65 34 29</div>
+        </div>
+
+        <div class="contact-box">
+          <div class="icon">✉</div>
+          <div>arcangelf2006@gmail.com</div>
+        </div>
+
+        <div class="contact-box">
+          <div class="icon">⌂</div>
+          <div>C/Rodrigo de Triana Nº6. Padul</div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="right">
+
+      <div class="top-bar"></div>
+
+      <div class="section">
+        <div class="section-title">
+          <span>•</span> SOBRE MÍ
+        </div>
+
+        <div class="about">
+          Estudiante de Grado Medio en Sistemas Microinformáticos y Redes,
+          recientemente finalizado. Cuento con 4 meses de prácticas en
+          Megasur realizando tareas de soporte técnico, configuración de
+          equipos e instalación de sistemas. Soy una persona responsable,
+          organizada y con facilidad para aprender rápidamente y trabajar
+          en equipo. Busco una oportunidad para seguir creciendo
+          profesionalmente dentro del sector IT y aportar mis conocimientos
+          técnicos y actitud proactiva.
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <span>•</span> EXPERIENCIA
+        </div>
+
+        <div class="job-title">
+          Prácticas de Informática — Megasur
+        </div>
+
+        <div class="job-date">
+          2026 | 4 meses
+        </div>
+
+        <ul>
+          <li>Montaje y configuración de ordenadores</li>
+          <li>Instalación de sistemas operativos y programas</li>
+          <li>Diagnóstico y resolución de incidencias básicas</li>
+          <li>Preparación y revisión de equipos informáticos</li>
+          <li>Organización y mantenimiento del material informático</li>
+          <li>Recepción de paquetes en RMA</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <span>•</span> HABILIDADES PERSONALES
+        </div>
+
+        <ul>
+          <li>Trabajo en equipo</li>
+          <li>Aprendizaje rápido y adaptabilidad</li>
+          <li>Organización y responsabilidad</li>
+          <li>Buena comunicación y trato con usuarios</li>
+          <li>Capacidad para trabajar en entornos dinámicos</li>
+        </ul>
+      </div>
+
+      <div class="section education">
+        <div class="section-title dark">
+          <span>•</span> EDUCACIÓN
+        </div>
+
+        <h3>Grado Medio en Sistemas Microinformáticos y Redes</h3>
+        <p>IES Alonso Cano — Finalizado en 2026</p>
+
+        <h3>Educación Secundaria Obligatoria (ESO)</h3>
+        <p>4º de la ESO 2024.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
 </html>
+```
+
+La foto original sí se puede reutilizar. Solo tienes que guardarla como `foto.jpg` en la misma carpeta del HTML.
